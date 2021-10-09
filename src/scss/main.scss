@@ -1,0 +1,52 @@
+@import "vars";
+@import "fonts";
+@import "icons";
+@import "mixins";
+@import "blocks/header";
+@import "pages/main/index";
+@import "blocks/footer";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotham Book';
+  color: $white;
+
+  @include respond-to('tablet') {  
+    .lock {
+      overflow: hidden;
+    }
+  }
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}

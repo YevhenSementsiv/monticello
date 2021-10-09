@@ -1,0 +1,117 @@
+.footer {
+  padding: 205px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &__content {
+    max-width: 830px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__column {
+    display: flex;
+
+    &_left {
+      flex-direction: column;
+      max-width: 470px;
+    }
+  }
+
+  &__logo-holder {
+    margin-bottom: 43px;
+  }
+
+  &__rights {
+    display: inline-block;
+    border-right: 1px solid $white;
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  &__comment {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+
+  &__social-list {
+    min-width: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include respond-to('laptop') {
+      max-width: 130px;
+    }
+
+    @include respond-to('tablet') {
+      max-width: 270px;
+    }
+
+    @include respond-to('mobile') {
+      max-width: 180px;
+    }
+  }
+
+  &__social-item {
+    max-width: 40px;
+    width: 100%;
+    min-height: 40px;
+    border: 1px solid $white;
+    border-radius: 50%;
+
+    &:hover {
+      border-color: $lightblue;
+      background-color: $white;
+    }
+
+    @include respond-to('laptop') {
+      max-width: 30px;
+      width: 100%;
+      min-height: 30px;
+    }
+
+    @include respond-to('tablet') {
+      max-width: 80px;
+      width: 100%;
+      min-height: 80px;
+    }
+
+    @include respond-to('mobile') {
+      max-width: 50px;
+      width: 100%;
+      min-height: 50px;
+    }
+  }
+
+  &__social-link {
+    display: block;
+    text-align: center;
+    line-height: 38px;
+    font-size: 16px;
+    color: $white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+
+    &:hover {
+      color: $lightblue;
+    }
+
+    @include respond-to('laptop') {
+      line-height: 28px;
+      font-size: 12px;
+    }
+
+    @include respond-to('tablet') {
+      line-height: 76px;
+      font-size: 35px;
+    }
+
+    @include respond-to('mobile') {
+      line-height: 48px;
+      font-size: 20px;
+    }
+  }
+}

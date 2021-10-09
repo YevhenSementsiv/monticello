@@ -1,0 +1,135 @@
+.what {
+  padding: 100px 0 70px;
+  position: relative;
+
+  &__title-line {
+    max-width: 100px;
+    border: 1px solid $darkblue;
+    margin: 0 auto 40px;
+  }
+
+  &__title {
+    font-family: $gothamfont;
+    font-weight: 700;
+    font-size: 44px;
+    color: $darkblue;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+  }
+
+  &__row {
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      padding: 70px 0 105px;
+    }
+
+    &_bottom {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      padding: 105px 0 70px;
+    }
+  }
+
+  &__column {
+    &_left {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    &_right {
+      max-width: 500px;
+      width: 100%;
+      padding: 60px 0 0;
+    }
+  }
+
+  &__top-bg {
+    position: absolute;
+    z-index: -1;
+    top: 270px;
+    left: 0;
+    width: 40%;
+    min-height: 470px;
+    background-color: $lightblue;
+  }
+
+  &__bottom-bg {
+    position: absolute;
+    z-index: -1;
+    bottom: 210px;
+    right: 0;
+    width: 40%;
+    min-height: 470px;
+    background-color: $purple;
+  }
+
+  &__img-holder {
+    width: 100%;
+    min-height: 470px;
+  }
+
+  &__column-title {
+    font-size: 22px;
+    color: $darkblue;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+
+  &__column-subtitle {
+    font-family: $gothamfont;
+    font-weight: 700;
+    font-size: 44px;
+    color: $darkblue;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__text-holder {
+    font-family: $opensansfont;
+    font-weight: 400;
+    font-size: 18px;
+    color: $bluegrey;
+    line-height: 165%;
+    margin-bottom: 40px;
+  }
+
+  &__link-btn {
+    display: block;
+    max-width: 190px;
+    text-align: center;
+    border: 1px solid $darkblue;
+    color: $darkblue;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px;
+    margin-bottom: 60px;
+
+    &:hover {
+      box-shadow: 0 0 12px #6633FF;
+      transition: box-shadow ease 0.2s;
+    }
+
+    &:active {
+      transform: scale(0.9);
+      transition: transform ease 0.2s;
+    }
+  }
+
+  &__address-holder {
+    font-family: $opensansfont;
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  &__link-address {
+    color: $darkblue;
+
+    &:hover {
+      color: $lightblue;
+      transition: color ease .2s;
+    }
+  }
+}
